@@ -1,0 +1,39 @@
+html,body,main {
+  height: 100%;
+}
+
+main {
+  background: dodgerblue;
+  height: 100%;
+}
+
+body {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  background-image: url('Icons/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  letter-spacing: 1px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head {
+  height: 200px;
+  background-color: dodgerblue;
+
+}
+nav li {
+  margin-left: -45px;
+  padding: 2%;
+  background: dodgerblue;
+  border-top: 1px solid black;
+}
+
+h1 {
+  font-size: 2em;
+  padding-top: 10%;
+}
