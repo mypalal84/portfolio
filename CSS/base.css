@@ -2,15 +2,10 @@ html,body,main {
   height: 100%;
 }
 
-main {
-  background: dodgerblue;
-  height: 100%;
-}
-
 body {
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
-  background-image: url('Icons/background.jpg');
+  background-image: url('/Background/background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -21,10 +16,6 @@ body {
   text-align: center;
 }
 
-.head {
-  height: 200px;
-  background-color: dodgerblue;
-
 }
 nav li {
   margin-left: -45px;
@@ -34,6 +25,8 @@ nav li {
 }
 
 h1 {
-  font-size: 2em;
-  padding-top: 10%;
+  font-size: 3em;
+  padding: 2%;
+  margin: 10px 0px 10px 0px;
+  background-color: dodgerblue;
 }

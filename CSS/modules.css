@@ -4,6 +4,11 @@
   font-size: 4em;
 }
 
+.head {
+  height: 160px;
+  background-color: dodgerblue;
+}
+
 .main-nav ul {
   display: none;
   list-style: none;
@@ -11,11 +16,12 @@
 }
 
 .main-nav:hover ul {
-  display: block;
+  display: inline;
 }
 
 .tab {
   visibility: visible;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 700px) {
@@ -32,8 +38,5 @@
    .main-nav:hover ul {
      display: flex;
      justify-content: space-around;
-   }
-   .main-nav li {
-     border: none;
    }
  }
