@@ -1,39 +1,39 @@
-html,body,main {
-  height: 100%;
-}
+/** {
+  outline: 1px dotted yellow;
+}*/
 
-main {
-  background: dodgerblue;
-  height: 100%;
+html,body,main {
+  width: 100%;
 }
 
 body {
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
-  background-image: url('Icons/background.jpg');
+  background-image: url('/IMG/background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: black;
+  color: white;
   letter-spacing: 1px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-.head {
-  height: 200px;
-  background-color: dodgerblue;
-
-}
 nav li {
-  margin-left: -45px;
+
+  margin-left: -78px;
   padding: 2%;
-  background: dodgerblue;
-  border-top: 1px solid black;
 }
 
 h1 {
-  font-size: 2em;
-  padding-top: 10%;
+  font-size: 3em;
+  padding: 2%;
+  margin: 10px 0px 10px 0px;
+  background-color: teal;
+}
+
+footer {
+  background-color: dodgerblue;
+  opacity: .95;
 }
