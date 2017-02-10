@@ -11,12 +11,23 @@
 .header {
   height: 160px;
   background-color: dodgerblue;
+  opacity: .95;
+}
+
+.byline {
+  background-color: dodgerblue;
+  opacity: .95;
 }
 
 .main-nav ul {
   display: none;
   list-style: none;
   clear: both;
+}
+
+.project-explanation {
+  background-color: teal;
+  opacity: .95;
 }
 
 .main-nav:hover ul {
@@ -30,12 +41,16 @@
   list-style: none;
 }
 
+.project-pic {
+  max-width: 400px;
+}
+
 .social-icons-list {
   display: inline-flex;
 }
 
 .social-icon {
-  padding-left: 4em;
+  padding-left: 1em;
   list-style: none;
 }
 

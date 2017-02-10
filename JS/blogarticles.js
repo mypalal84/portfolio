@@ -3,18 +3,26 @@
 var rawData = [
   {
     title:       'About-Me',
-    category:    'basics',
+    category:    '201-project',
     author:      'Alex Cahn',
     authorUrl:   'https://github.com/mypalal84?tab=repositories',
     publishedOn: '2017-01-08',
-    body:        '<p>This was my very first project for my CodeFellows 201 class.  Back when we were learning the basics of html, css, and javascript. We have already come a long way since then.</p><p><img src="IMG/profile pic.jpg" class="pull-right" ></p>'
+    body:        '<p class="project-explanation">This was my very first project for my CodeFellows 201 class.  Back when I was learning the basics of html, css, and javascript.  Lots of alerts and prompts.  I have already come a long way since then.</p><p><a href="https://mypalal84.github.io/About-Me/"><img src="IMG/profile pic.jpg" class="project-pic"></a></p>'
   },
   {
     title:       'Take a Hike',
-    category:    'quiz',
+    category:    '201-project',
     author:      'Alex Cahn, Abigail White, Miguel Pena, Stephen Johnson',
     authorUrl:   'https://github.com/abswhite1/take-a-hike/graphs/contributors',
     publishedOn: '2017-01-27',
-    body:        '<p>This was our group project for the end of Code 201.  We made a website that gives the user a quiz complete with pictures to choose from.  At the end of the quiz, depending on your choices, a recommended hike is generated.</p><p> <img src="IMG/take-a-hike.png" href="https://abswhite1.github.io/take-a-hike/" class="pull-left" ></p>'
+    body:        '<p class="project-explanation">This was our group project for the end of Code 201.  I enjoyed working in a group environment.  We made a hiking themed website that gives the user a quiz complete with pictures to choose from.  Depending on what the user chooses throughout the quiz, a recommended hike result page is generated.</p><p> <a href="https://abswhite1.github.io/take-a-hike/"><img src="IMG/take-a-hike.png" class="project-pic"></a></p>'
+  },
+  {
+    title:       'BusMall',
+    category:    '201-project',
+    author:      'Alex Cahn',
+    authorUrl:   'https://github.com/mypalal84?tab=repositories',
+    publishedOn: '2017-01-22',
+    body:        '<p class="project-explanation">This was the week 3 project from Code 201. For this project, I was given 20 different product images, and told to make a market research test that would randomly show 3 at a time.  When a user selects and clicks on an image, the images are replaced with 3 different random images.  After 25 clicks, the study is over, and a chart appears complete with the data.  I also used local storage, so the data updates after each test until it is cleared from the browser.</p><p><a href="https://mypalal84.github.io/bus-mall/"><img src="IMG/bus-mall.png" class="project-pic"></a></p>'
   },
 ];
