@@ -4,7 +4,11 @@
   font-size: 4em;
 }
 
-.head {
+.content {
+  color: white;
+}
+
+.header {
   height: 160px;
   background-color: dodgerblue;
 }
@@ -16,12 +20,23 @@
 }
 
 .main-nav:hover ul {
-  display: inline;
+  display: inline-block;
 }
 
 .tab {
   visibility: visible;
   margin-top: 20px;
+  padding-left: 4em;
+  list-style: none;
+}
+
+.social-icons-list {
+  display: inline-flex;
+}
+
+.social-icon {
+  padding-left: 4em;
+  list-style: none;
 }
 
 @media screen and (min-width: 700px) {

@@ -21,8 +21,9 @@
 
   </head>
   <body>
-    <header>
-      <div class="head">
+    <div class="header">
+      <header>
+
 
 
       <nav class="main-nav">
@@ -35,23 +36,56 @@
         </ul>
 
       </nav>
-      </div>
-    </header>
-    <section>
-    <!-- <div class="about-me"> -->
-      <h1 class="name">Alex Cahn</h1>
-      <ul class="social-icons">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
 
-    <!-- </div> -->
-  </section>
-    <main>
+      </header>
+    </div>
 
-    </main>
+    <div class="content">
+
+      <main>
+
+      <section id="articles">
+        <article class="template">
+          <header>
+            <h1>Title</h1>
+            <div class="byline">
+              By
+              <address><a href="">Author Name</a></address>
+              published
+              <time pubdate datetime="2000-01-01">Publish Time</time>
+            </div>
+          </header>
+          <section class="article-body"></section>
+        </article>
+      </section>
+
+      </main>
+    </div>
+
+    <div class="footer">
+
+      <footer>
+        <section>
+        <!-- <div class="about-me"> -->
+          <h1 class="name">Alex Cahn</h1>
+          <ul class="social-icons-list">
+
+            <li class="social-icon"><a href="#" class="icon-github">GitHub</li>
+            <li class="social-icon"><a href="#" class="icon-linkedin2">LinkedIn</li>
+            <li class="social-icon"><a href="#" class="icon-twitter">Twitter</li>
+            <li class="social-icon"><a href="#" class="icon-mail2">Email</li>
+
+          </ul>
+
+        <!-- </div> -->
+        </section>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="JS/blogarticles.js"></script>
+    <script src="JS/app.js"></script>
 
   </body>
 </html>
