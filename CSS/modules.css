@@ -4,19 +4,12 @@
   font-size: 4em;
 }
 
-.content {
-  color: white;
-}
-
 .header {
   height: 160px;
-  background-color: dodgerblue;
-  opacity: .95;
 }
 
-.byline {
-  background-color: dodgerblue;
-  opacity: .95;
+.template {
+  visibility: hidden;
 }
 
 .main-nav ul {
@@ -25,33 +18,35 @@
   clear: both;
 }
 
-.project-explanation {
-  background-color: teal;
-  opacity: .95;
-}
-
 .main-nav:hover ul {
   display: inline-block;
 }
 
 .tab {
   visibility: visible;
-  margin-top: 20px;
+  margin-top: 2em;
   padding-left: 4em;
   list-style: none;
 }
 
 .project-pic {
-  max-width: 400px;
+  max-width: 375px;
 }
 
 .social-icons-list {
-  display: inline-flex;
+  display: inline-block;
+  max-width: 375px;
 }
 
-.social-icon {
-  padding-left: 1em;
+.social-icons-list li {
+  font-size: 2em;
+  padding-right: 2em;
   list-style: none;
+  display: inline;
+}
+
+.social-icons-list li a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 700px) {

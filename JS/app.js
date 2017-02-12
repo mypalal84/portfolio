@@ -42,11 +42,11 @@ Article.prototype.toHtml = function () {
   return $newArticle;
 };
 
-rawData.sort(function (a, b) {
+projects.sort(function (a, b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-rawData.forEach(function (articleObject) {
+projects.forEach(function (articleObject) {
   articles.push(new Article(articleObject));
 });
 
