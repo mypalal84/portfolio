@@ -3,7 +3,7 @@
 var projects = [
   {
     title:       'About-Me',
-    category:    '201-project',
+    category:    '201 lab project',
     author:      'Alex Cahn',
     authorUrl:   'https://github.com/mypalal84?tab=repositories',
     publishedOn: '2017-01-08',
@@ -11,7 +11,7 @@ var projects = [
   },
   {
     title:       'Take a Hike',
-    category:    '201-project',
+    category:    '201 group project',
     author:      'Alex Cahn, Abigail White, Miguel Pena, Stephen Johnson',
     authorUrl:   'https://github.com/abswhite1/take-a-hike/graphs/contributors',
     publishedOn: '2017-01-27',
@@ -19,7 +19,7 @@ var projects = [
   },
   {
     title:       'BusMall',
-    category:    '201-project',
+    category:    '201 lab project',
     author:      'Alex Cahn',
     authorUrl:   'https://github.com/mypalal84?tab=repositories',
     publishedOn: '2017-01-22',

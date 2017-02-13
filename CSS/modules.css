@@ -3,7 +3,13 @@
   font-size: 6em;
 }
 
-
+.tab {
+  visibility: visible;
+  margin-top: 2em;
+  padding-left: 4em;
+  list-style: none;
+  font-size: 1.5em;
+}
 
 .icon-menu {
   float: right;
@@ -17,17 +23,17 @@
   clear: both;
 }
 
-.site-header {
-
-}
-
 #filters {
   padding: 0;
   list-style: none;
 }
 
 select {
-  background-color: #777;
+  background-color: #darkslategrey;
+}
+
+textarea {
+  color: darkslategrey;
 }
 
 .template {
@@ -44,13 +50,6 @@ select {
   display: inline-block;
 }
 
-.tab {
-  visibility: visible;
-  margin-top: 2em;
-  padding-left: 4em;
-  list-style: none;
-}
-
 .project-pic {
   max-width: 100%;
 }
@@ -58,11 +57,14 @@ select {
 .social-icons-list {
   display: inline-block;
   max-width: 100%;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 170px;
 }
 
 .social-icons-list li {
-  font-size: 2em;
-  padding-right: 2em;
+  margin-left: 2em;
+  padding-left: 2em;
   list-style: none;
   display: inline;
 }
@@ -73,6 +75,14 @@ select {
 
 .tab-content li {
   list-style: none;
+}
+
+form {
+  color: #darkslategrey;
+}
+
+label {
+  color: darkslategrey;
 }
 
 @media screen and (min-width: 640px) {
