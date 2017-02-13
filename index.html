@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/icons.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/modules.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Julius+Sans+One|Playfair+Display|Poiret+One|Raleway|Tangerine" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Julius Sans One', sans-serif; -->
+    <script id="articles-template" type="text/x-handlebars-template">
+
+    <article data-author="{{author}}" data-category="{{category}}">
+      <h2>{{title}}</h2>
+      <p>{{category}}</p>
+      <p>{{author}}</p>
+      <p>{{authorUrl}}</p>
+      <p>{{publishedOn}}</p>
+      <p>{{{body}}}</p>
+    </article>
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="site-header clearfix">
+
+      <nav class="main-nav">
+          <h2 class="icon-menu">My Portfolio</h2>
+
+        <ul>
+          <li class="tab" data-section="home"><a href="Icons/003-home3.png" class="nav-item"></a>Home</li>
+          <li class="tab" data-section="work"><a href="Icons/069-address-book.png" class="nav-item"></a>Work</li>
+          <li class="tab" data-section="skills"><a href="Icons/385-embed2.png" class="nav-item"></a>Skills</li>
+        </ul>
+
+      </nav>
+    </div>
+    </header>
+
+    <div class="content">
+
+      <main>
+
+      <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="author-filter">
+                <option value="">-- Filter by Authors --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="about" class="tab-content">
+        <header>
+          Welcome to my Blog
+        </header>
+          <section>
+            <h1>Some of my intrests:</h1>
+            <ul>
+              <li>Coding</li>
+              <li>Sharing what I've learned</li>
+              <li>Hanging with my family</li>
+            </ul>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <div class="footer">
+
+      <footer>
+        <section>
+
+          <h1 class="name">Alex Cahn</h1>
+
+          <ul class="social-icons-list">
+
+            <li>
+              <a href="https://github.com/mypalal84" class="icon-github"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/alex-cahn-632237133" class="icon-linkedin2"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/acahn206" class="icon-twitter"></a>
+            </li>
+            <li>
+              <a href="mailto:alexcahn@gmail.com" class="icon-mail2"></a>
+            </li>
+
+          </ul>
+
+
+        </section>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="JS/blogarticles.js"></script>
+    <script src="JS/app.js"></script>
+    <!-- <script src="JS/articleview.js"></script> -->
+
+  </body>
+</html>
