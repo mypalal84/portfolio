@@ -18,7 +18,17 @@
     font-family: 'Poiret One', cursive;
     font-family: 'Tangerine', cursive;
     font-family: 'Julius Sans One', sans-serif; -->
+    <script id="articles-template" type="text/x-handlebars-template">
 
+    <article data-author="{{author}}" data-category="{{category}}">
+      <h2>{{title}}</h2>
+      <p>{{category}}</p>
+      <p>{{author}}</p>
+      <p>{{authorUrl}}</p>
+      <p>{{publishedOn}}</p>
+      <p>{{{body}}}</p>
+    </article>
+    </script>
   </head>
   <body>
     <header>
@@ -56,19 +66,6 @@
             </li>
           </ul>
         </div>
-        <article class="template" data-category="placeholder-category">
-          <header>
-            <h1>Title</h1>
-            <div class="byline">
-              By
-              <address><a href="">Author Name</a></address>
-              published
-              <time pubdate datetime="2000-01-01">Publish Time</time>
-            </div>
-          </header>
-          <section class="article-body"></section>
-          <a href="#" class="read-on">Read on &rarr;</a>
-        </article>
       </section>
       <section id="about" class="tab-content">
         <header>
@@ -117,6 +114,7 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="JS/blogarticles.js"></script>
     <script src="JS/app.js"></script>
     <!-- <script src="JS/articleview.js"></script> -->
