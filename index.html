@@ -21,13 +21,11 @@
 
   </head>
   <body>
-    <div class="header">
-      <header>
-
-
+    <header>
+      <div class="site-header clearfix">
 
       <nav class="main-nav">
-          <h2 class="icon-menu"></h2>
+          <h2 class="icon-menu">My Portfolio</h2>
 
         <ul>
           <li class="tab" data-section="home"><a href="Icons/003-home3.png" class="nav-item"></a>Home</li>
@@ -36,16 +34,29 @@
         </ul>
 
       </nav>
-
-      </header>
     </div>
+    </header>
 
     <div class="content">
 
       <main>
 
-      <section id="articles">
-        <article class="template">
+      <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="author-filter">
+                <option value="">-- Filter by Authors --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <article class="template" data-category="placeholder-category">
           <header>
             <h1>Title</h1>
             <div class="byline">
@@ -56,9 +67,22 @@
             </div>
           </header>
           <section class="article-body"></section>
+          <a href="#" class="read-on">Read on &rarr;</a>
         </article>
       </section>
-
+      <section id="about" class="tab-content">
+        <header>
+          Welcome to my Blog
+        </header>
+          <section>
+            <h1>Some of my intrests:</h1>
+            <ul>
+              <li>Coding</li>
+              <li>Sharing what I've learned</li>
+              <li>Hanging with my family</li>
+            </ul>
+          </section>
+        </section>
       </main>
     </div>
 
@@ -71,10 +95,18 @@
 
           <ul class="social-icons-list">
 
-            <li class="social-icon"><a href="#" class="icon-github">GitHub</li>
-            <li class="social-icon"><a href="#" class="icon-linkedin2">LinkedIn</li>
-            <li class="social-icon"><a href="#" class="icon-twitter">Twitter</li>
-            <li class="social-icon"><a href="#" class="icon-mail2">Email</li>
+            <li>
+              <a href="https://github.com/mypalal84" class="icon-github"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/alex-cahn-632237133" class="icon-linkedin2"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/acahn206" class="icon-twitter"></a>
+            </li>
+            <li>
+              <a href="mailto:alexcahn@gmail.com" class="icon-mail2"></a>
+            </li>
 
           </ul>
 
@@ -87,6 +119,7 @@
     crossorigin="anonymous"></script>
     <script src="JS/blogarticles.js"></script>
     <script src="JS/app.js"></script>
+    <!-- <script src="JS/articleview.js"></script> -->
 
   </body>
 </html>

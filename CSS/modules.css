@@ -4,19 +4,23 @@
   font-size: 4em;
 }
 
-.content {
-  color: white;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.header {
-  height: 160px;
-  background-color: dodgerblue;
-  opacity: .95;
+.site-header {
+
 }
 
-.byline {
-  background-color: dodgerblue;
-  opacity: .95;
+#filters {
+  padding: 0;
+  list-style: none;
+}
+
+.template {
+  visibility: hidden;
 }
 
 .main-nav ul {
@@ -25,36 +29,38 @@
   clear: both;
 }
 
-.project-explanation {
-  background-color: teal;
-  opacity: .95;
-}
-
 .main-nav:hover ul {
   display: inline-block;
 }
 
 .tab {
   visibility: visible;
-  margin-top: 20px;
+  margin-top: 2em;
   padding-left: 4em;
   list-style: none;
 }
 
 .project-pic {
-  max-width: 400px;
+  max-width: 100%;
 }
 
 .social-icons-list {
-  display: inline-flex;
+  display: inline-block;
+  max-width: 100%;
 }
 
-.social-icon {
-  padding-left: 1em;
+.social-icons-list li {
+  font-size: 2em;
+  padding-right: 2em;
   list-style: none;
+  display: inline;
 }
 
-@media screen and (min-width: 700px) {
+.social-icons-list li a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
    .icon-menu {
      display: none;
    }

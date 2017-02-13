@@ -1,6 +1,6 @@
 'use strict';
 
-var rawData = [
+var projects = [
   {
     title:       'About-Me',
     category:    '201-project',
