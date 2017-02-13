@@ -1,6 +1,6 @@
 'use strict';
 
-var articles = [];
+var allArticles = [];
 
 function Article(opts) {
   // Save ALL the properties of `opts` into `this`
@@ -12,7 +12,7 @@ function Article(opts) {
   this.body = opts.body;
 }
 
-Article.prototype.toHtml = function () {
+Article.prototype.toHtml = function() {
   // Use handlebars to render your articles.
   // Get your template from the DOM.
   // "compile" your template with Handlebars.
@@ -29,10 +29,10 @@ projects.sort(function (a, b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-projects.forEach(function (articleObject) {
-  articles.push(new Article(articleObject));
+projects.forEach(function (ele) {
+  allArticles.push(new Article(ele));
 });
 
-articles.forEach(function(article) {
-  $('#articles').append(article.toHtml());
+allArticles.forEach(function(a) {
+  $('#articles').append(a.toHtml());
 });
