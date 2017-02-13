@@ -2,21 +2,6 @@
 
 var articleView = {};
 
-// articleView.populateFilters = function() {
-//   $('article').not('.template').each(function() {
-//     var authorName, category, optionTag;
-//     authorName = $(this).find('address a').text();
-//     optionTag = '<option value="' + authorName + '">' + authorName + '</option>';
-//     $('#author-filter').append(optionTag);
-//     category = $(this).attr('data-category');
-//     optionTag = '<option value="' + category + '">' + category + '</option>';
-//     // If the category exists, do not append a duplicate <option> tag.
-//     // If the category doesn't exist, append an <option> tag.
-//     if ($('#category-filter option[value="' + category + '"]').length === 0) {
-//       $('#category-filter').append(optionTag);
-//     }
-//   });
-// };
 articleView.populateFilters = function() {
   $('article').each(function() {
     if (!$(this).hasClass('template')) {
