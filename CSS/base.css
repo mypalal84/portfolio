@@ -1,5 +1,5 @@
 /** {
-  outline: 1px dotted yellow;
+  border: 1px dotted white;
 }*/
 
 html,body,main {
@@ -35,7 +35,7 @@ h1 {
 
 a, a:link, a:active {
   text-decoration: none;
-  color: #777;
+  color: darkslategrey;
 }
 
 a:hover, a:focus {
