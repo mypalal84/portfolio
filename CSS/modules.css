@@ -4,8 +4,19 @@
   font-size: 4em;
 }
 
-.header {
-  height: 160px;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-header {
+
+}
+
+#filters {
+  padding: 0;
+  list-style: none;
 }
 
 .template {
@@ -30,12 +41,12 @@
 }
 
 .project-pic {
-  max-width: 375px;
+  max-width: 100%;
 }
 
 .social-icons-list {
   display: inline-block;
-  max-width: 375px;
+  max-width: 100%;
 }
 
 .social-icons-list li {
@@ -49,7 +60,7 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 640px) {
    .icon-menu {
      display: none;
    }

@@ -29,3 +29,15 @@ h1 {
   padding: 2%;
   background-color: #95a5a6;
 }
+
+/*LINK STYLES
+=======================================*/
+
+a, a:link, a:active {
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover, a:focus {
+  color: #ecf0f1;
+}
