@@ -19,6 +19,10 @@
   list-style: none;
 }
 
+select {
+  background-color: #777;
+}
+
 .template {
   visibility: hidden;
 }
@@ -58,6 +62,10 @@
 
 .social-icons-list li a {
   text-decoration: none;
+}
+
+.tab-content li {
+  list-style: none;
 }
 
 @media screen and (min-width: 640px) {

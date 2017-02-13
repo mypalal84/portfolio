@@ -16,13 +16,14 @@ Article.prototype.toHtml = function () {
   // Use handlebars to render your articles.
   // Get your template from the DOM.
   // "compile" your template with Handlebars.
-  var source = $('#articles-template').html();
-  var templateRender = Handlebars.compile(source);
-  console.log(templateRender);
-  return templateRender(this);
-  // Display how old the post was
+  var template = Handlebars.compile($('#article-template').text());
+
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
+  // passing the body into the marked.js library to format our markdown input!
+  this.body = marked(this.body);
+
+  return template(this);
 };
 
 projects.sort(function (a, b) {
