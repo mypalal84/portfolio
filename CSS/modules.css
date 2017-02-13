@@ -11,6 +11,10 @@
   font-size: 1.5em;
 }
 
+.nav-list-item {
+  margin: : 0 -100px 0 -100px;
+}
+
 .icon-menu {
   float: right;
   display: inline-block;
@@ -75,6 +79,7 @@ textarea {
 
 .tab-content li {
   list-style: none;
+  display: inline-block;
 }
 
 form {
