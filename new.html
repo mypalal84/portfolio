@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/modules.css">
     <link rel="stylesheet" href="vendor/styles/railscasts.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Julius+Sans+One|Playfair+Display|Poiret+One|Raleway|Tangerine" rel="stylesheet">
     <script id="article-template" type="text/x-handlebars-template">
       <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
         <header>
@@ -54,7 +55,7 @@
             <input type="text" id="article-author" placeholder="Author Name" required>
           </label>
           <label>
-            <input type="text" id="article-author-url" placeholder="Author's URL" required>
+            <input type="text" id="article-authorUrl" placeholder="Author's URL" required>
           </label>
           <label>
             <input type="text" id="article-category" placeholder="Category" required>
@@ -70,7 +71,7 @@
       <section id="article-export">
         <label id="export-field" for="article-json" class="pull-right">
           <input type="text" readonly id="article-json">
-          When finalized, copy the above JSON, and paste into blogArticles.js
+          When finalized, copy the above JSON, and paste into blogarticles.json
         </label>
       </section>
     </main>

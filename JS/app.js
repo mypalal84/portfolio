@@ -53,12 +53,29 @@ Article.loadAll = function(projects) {
 Article.fetchAll = function() {
   if (localStorage.projects) {
     console.log('loading from local storage');
+    var ajaxCall = $.ajax({
+      url: 'DATA/blogarticles.json',
+      type: 'HEAD',
+      //dataType: 'json'
+    })
+    .done(function(data, message, xhr) {
+      if (JSON.parse(localStorage.getItem('ETag')) !== xhr.getResponseHeader('ETag')) {
+        console.log(xhr.getResponseHeader('ETag'));
+        localStorage.setItem('ETag', JSON.stringify(xhr.getResponseHeader('ETag')));
+        $.getJSON('DATA/blogarticles.json').then(function(data) {
+          localStorage.setItem('projects', JSON.stringify(data));
+        });
+      }
+      var data = JSON.parse(localStorage.getItem('projects'));
+      Article.loadAll(data);
+      articleView.initIndexPage();
+    });
     // When projects is already in localStorage,
     // we can load it with the .loadAll function above,
     // and then render the index page (using the proper method on the articleView object).
-    Article.loadAll(JSON.parse(localStorage.projects)); //Done: What do we pass in to loadAll()?
+    // Article.loadAll(JSON.parse(localStorage.projects)); //Done: What do we pass in to loadAll()?
     //Done: What method do we call to render the index page?
-    articleView.initIndexPage();
+    // articleView.initIndexPage();
   } else {
     console.log('loading from JSON');
     $.getJSON('DATA/blogarticles.json')
@@ -67,12 +84,22 @@ Article.fetchAll = function() {
       localStorage.setItem('projects',JSON.stringify(data));
       Article.loadAll(data);
       articleView.initIndexPage();
+    });
+    var ajaxCall = $.ajax({
+      url: 'DATA/blogarticles.json',
+      type: 'HEAD',
+      //dataType: 'json'
     })
-  }
+    .done(function(data, message, xhr) {
+      if (JSON.parse(localStorage.getItem('ETag')) !== xhr.getResponseHeader('ETag')) {
+        console.log(xhr.getResponseHeader('ETag'));
+      }
 
     // DONE: When we don't already have the projects,
     //[x] we need to retrieve the JSON file from the server with AJAX (which jQuery method is best for this?),
     //[x] cache it in localStorage so we can skip the server call next time,
     //[x] then load all the data into Article.all with the .loadAll function above,
     //[x] and then render the index page.
+    });
+  }
 }
