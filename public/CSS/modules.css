@@ -1,0 +1,104 @@
+.header-h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 6em;
+}
+
+.tab {
+  visibility: visible;
+  margin-top: 2em;
+  padding-left: 4em;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.icon-menu {
+  float: right;
+  display: inline-block;
+  font-size: 4em;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#filters {
+  padding: 0;
+  list-style: none;
+}
+
+select {
+  background-color: #darkslategrey;
+}
+
+textarea {
+  color: darkslategrey;
+}
+
+.template {
+  visibility: hidden;
+}
+
+.main-nav ul {
+  display: none;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: inline-block;
+}
+
+.project-pic {
+  max-width: 100%;
+}
+
+.social-icons-list {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 170px;
+}
+
+.social-icons-list li {
+  margin-left: 2em;
+  padding-left: 2em;
+  list-style: none;
+  display: inline;
+}
+
+.social-icons-list li a {
+  text-decoration: none;
+}
+
+.tab-content li {
+  list-style: none;
+  display: inline-block;
+}
+
+form {
+  color: #darkslategrey;
+}
+
+label {
+  color: darkslategrey;
+}
+
+@media screen and (min-width: 640px) {
+   .icon-menu {
+     display: none;
+   }
+   .main-nav ul {
+     display: flex;
+     justify-content: space-around;
+   }
+   .tab {
+     visibility: visible;
+   }
+   .main-nav:hover ul {
+     display: flex;
+     justify-content: space-around;
+   }
+ }
