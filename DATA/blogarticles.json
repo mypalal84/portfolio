@@ -1,4 +1,3 @@
-
 [
    {
       "title": "About-Me",
@@ -25,4 +24,3 @@
       "body": "<p><a href=\"https://mypalal84.github.io/bus-mall/\"><img src=\"IMG/bus-mall.png\" class=\"project-pic\"><\/a><\/p><p class=\"project-explanation\">This was the week 3 project from Code 201. For this project, I was given 20 different product images, and told to make a market research test that would randomly show 3 at a time.  When a user selects and clicks on an image, the images are replaced with 3 different random images.  After 25 clicks, the study is over, and a chart appears complete with the data.  I also used local storage, so the data updates after each test until it is cleared from the browser.<\/p>"
    }
 ]
-

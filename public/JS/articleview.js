@@ -1,6 +1,6 @@
 'use strict';
 
-var articleView = {};
+const articleView = {};
 
 articleView.populateFilters = function() {
   $('article').each(function() {
@@ -115,10 +115,14 @@ articleView.create = function() {
 };
 
 articleView.initIndexPage = function() {
-//Invoke all of the methods
-articleView.populateFilters();
-articleView.handleAuthorFilter();
-articleView.handleCategoryFilter();
-articleView.handleMainNav();
-articleView.setTeasers();
+  Article.all.forEach(function(a) {
+    $('#articles').append(a.toHtml())
+  });
+
+  //Invoke all of the methods
+  articleView.populateFilters();
+  articleView.handleAuthorFilter();
+  articleView.handleCategoryFilter();
+  articleView.handleMainNav();
+  articleView.setTeasers();
 };

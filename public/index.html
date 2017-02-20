@@ -33,19 +33,51 @@
       </script>
     </head>
   <body>
-    <header>
-      <div class="site-header clearfix">
+
+    <header class="site-header clearfix">
+      <div class="header">
 
       <nav class="main-nav">
-          <h2 class="icon-menu">My Portfolio</h2>
+          <div class="icon-menu"></div>
 
         <ul>
 
-          <li class="tab icon-home3" data-section="home"><a href="index.html" class="nav-item"></a>Home</li>
-          <li class="tab icon-user-tie" data-section="work"><a href="#" class="nav-item"></a>Work</li>
-          <li class="tab icon-embed2" data-section="skills"><a href="#" class="nav-item"></a>Skills</li>
+          <li class="tab icon-home3" data-content="articles"><a href="index.html" class="nav-item">Home</a></li>
+          <li class="tab icon-user-tie" data-content="about"><a href="#" class="nav-item">About</a>
+            <section id="about" class="tab-content">
+              <header>
+                Welcome to my Blog
+              </header>
+                <section>
+                  <h2>Some Of My Interests:</h2>
+                  <ul class="nav-item-list">
+                    <li>Coding</li>
+                    <li>Cooking</li>
+                    <li>Animals</li>
+                    <li>Sports/Games</li>
+                  </ul>
+                </section>
+              </section>
+          </li>
+          <li class="tab icon-embed2" data-content="skills"><a href="#" class="nav-item">Skills</a>
+          <section id="skills" class="tab-content">
+            <header>
+              Things I've Learned At Code Fellows:
+            </header>
+              <section>
+                <h2>Skills:</h2>
+                <ul class="nav-item-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>jQuery</li>
+                </ul>
+              </section>
+            </section>
+          </li>
 
         </ul>
+          <h1 class="header-h1">Alex Cahn</h1>
 
       </nav>
     </div>
@@ -71,20 +103,7 @@
           </ul>
         </div>
       </section>
-      <section id="about" class="tab-content">
-        <header>
-          Welcome to my Blog
-        </header>
-          <section>
-            <h1>Some of my interests:</h1>
-            <ul>
-              <li>Coding</li>
-              <li>Cooking</li>
-              <li>Animals</li>
-              <li>Sports/Games</li>
-            </ul>
-          </section>
-        </section>
+
       </main>
     </div>
 
@@ -126,6 +145,7 @@
     <script src="JS/articleview.js"></script>
     <script>
       articleView.initIndexPage();
+
     </script>
   </body>
 </html>
