@@ -11,6 +11,7 @@ function Article(opts) {
 }
 
 // Instead of a global `articles = []` array, let's track this list of all articles directly on the constructor function. Note: it is NOT on the prototype. In JavaScript, functions are themselves objects, which means we can add properties/values to them at any time. In this case, we have a key/value pair to track, that relates to ALL of the Article objects, so it does not belong on the prototype, as that would only be relevant to a single instantiated Article.
+
 Article.all = [];
 
 Article.prototype.toHtml = function () {
@@ -67,6 +68,8 @@ Article.fetchAll = function() {
     // When projects is already in localStorage,
     // we can load it with the .loadAll function above,
     // and then render the index page (using the proper method on the articleView object).
+
+    // Article.loadAll(JSON.parse(localStorage.projects)); 
   } else {
     console.log('loading from JSON');
     $.getJSON('DATA/blogarticles.json')
@@ -76,7 +79,9 @@ Article.fetchAll = function() {
       Article.loadAll(data);
       articleView.initIndexPage();
     });
-    ajaxCall = $.ajax({
+
+    var ajaxCall = $.ajax({
+
       url: 'DATA/blogarticles.json',
       type: 'HEAD',
       //dataType: 'json'
@@ -87,6 +92,7 @@ Article.fetchAll = function() {
       }
 
     // When we don't already have the projects, we need to retrieve the JSON file from the server with AJAX (which jQuery method is best for this?), cache it in localStorage so we can skip the server call next time, then load all the data into Article.all with the .loadAll function above, and then render the index page.
+
     });
   }
 }

@@ -33,6 +33,7 @@
       </script>
     </head>
   <body>
+
     <header class="site-header clearfix">
       <div class="header">
 
@@ -139,11 +140,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="/vendor/scripts/marked.js"></script>
     <script src="/vendor/scripts/highlight.pack.js"></script>
-    <!-- <script src="JS/blogarticles.js"></script> -->
+    <script src="JS/blogarticles.js"></script>
     <script src="JS/app.js"></script>
     <script src="JS/articleview.js"></script>
     <script>
-      Article.fetchAll();
+      articleView.initIndexPage();
+
     </script>
   </body>
 </html>
