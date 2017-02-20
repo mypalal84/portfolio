@@ -31,7 +31,6 @@ Article.prototype.toHtml = function () {
 // There are some other functions that also relate to articles across the board, rather than just single instances. Object-oriented programming would call these "class-level" functions, that are relevant to the entire "class" of objects that are Articles.
 
 // This function will take the projects, how ever it is provided,
-
 // and use it to instantiate all the articles. This code is moved from elsewhere, and
 // encapsulated in a simply-named function for clarity.
 Article.loadAll = function(projects) {
