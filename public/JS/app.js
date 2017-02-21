@@ -13,14 +13,14 @@
   Article.all = [];
 
   Article.prototype.toHtml = function () {
-    // Use handlebars to render your articles.
-    // Get your template from the DOM.
-    // "compile" your template with Handlebars.
+    // Use handlebars to render articles.
+    // Get template from the DOM.
+    // "compile" template with Handlebars.
     let template = Handlebars.compile($('#article-template').text());
 
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
     this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
-    // passing the body into the marked.js library to format our markdown input!
+    // passing the body into the marked.js library to format the markdown input!
     this.body = marked(this.body);
 
     return template(this);
