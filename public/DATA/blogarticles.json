@@ -11,9 +11,9 @@
       "title": "Take a Hike",
       "category": "201 group project",
       "author": "Alex Cahn, Abigail White, Miguel Pena, Stephen Johnson",
-      "authorUrl": "https://github.com/abswhite1/take-a-hike/graphs/contributors",
+      "authorUrl": "https://github.com/abswhite/take-a-hike/graphs/contributors",
       "publishedOn": "2017-01-27",
-      "body": "<p><a href=\"https://abswhite1.github.io/take-a-hike/\"><img src=\"IMG/take-a-hike.png\" class=\"project-pic\"><\/a><\/p><p class=\"project-explanation\">This was our group project for the end of Code 201.  I enjoyed working in a group environment.  We made a hiking themed website that gives the user a quiz complete with pictures to choose from.  Depending on what the user chooses throughout the quiz, a recommended hike result page is generated.<\/p>"
+      "body": "<p><a href=\"https://abswhite.github.io/take-a-hike/index.html\"><img src=\"IMG/take-a-hike.png\" class=\"project-pic\"><\/a><\/p><p class=\"project-explanation\">This was our group project for the end of Code 201.  I enjoyed working in a group environment.  We made a hiking themed website that gives the user a quiz complete with pictures to choose from.  Depending on what the user chooses throughout the quiz, a recommended hike result page is generated.<\/p>"
    },
    {
       "title": "BusMall",

@@ -31,7 +31,7 @@
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
-    projects.forEach(function(ele) {
+    projects.map(function(ele) {
       Article.all.push(new Article(ele));
     })
   }
