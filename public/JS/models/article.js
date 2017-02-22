@@ -53,7 +53,7 @@
             localStorage.setItem('projects', JSON.stringify(data));
           });
         }
-        var data = JSON.parse(localStorage.getItem('projects'));
+        data = JSON.parse(localStorage.getItem('projects'));
         Article.loadAll(data);
         articleView.initIndexPage();
       });
@@ -81,5 +81,45 @@
       });
     }
   }
+
+  Article.truncateTable = callback => {
+    $.ajax({
+      url: '/articles',
+      method: 'DELETE',
+    })
+    .then(console.log)
+    .then(callback);
+  };
+
+  Article.prototype.insertRecord = function(callback) {
+    $.post('/articles/insert', {author: this.author, authorUrl: this.authorUrl, body: this.body, category: this.category, publishedOn: this.publishedOn, title: this.title})
+    .then(console.log)
+    .then(callback);
+  };
+
+  Article.prototype.deleteRecord = function(callback) {
+    $.ajax({
+      url: `/articles/${this.article_id}`,
+      method: 'DELETE'
+    })
+    .then(console.log)
+    .then(callback);
+  };
+
+  Article.prototype.updateRecord = function(callback) {
+    $.ajax({
+      url: `/articles/${this.article_id}`,
+      method: 'PUT',
+      data: {
+        author: this.author,
+        authorUrl: this.authorUrl,
+        body: this.body,
+        category: this.category,
+        publishedOn: this.publishedOn,
+        title: this.title}
+    })
+    .then(console.log)
+    .then(callback);
+  };
 module.Article = Article;
 })(window);
