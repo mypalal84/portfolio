@@ -41,8 +41,8 @@
 
         <ul>
 
-          <li class="tab icon-home3" data-content="articles"><a href="index.html" class="nav-item">Home</a></li>
-          <li class="tab icon-user-tie" data-content="about"><a href="#" class="nav-item">About</a>
+          <li class="tab icon-home3" data-content="articles"><a href="/" class="nav-item">Home</a></li>
+          <li class="tab icon-user-tie" data-content="about"><a href="/about" class="nav-item">About</a>
             <section id="about" class="tab-content">
               <header>
                 Welcome to my Blog
@@ -58,7 +58,7 @@
                 </section>
               </section>
           </li>
-          <li class="tab icon-embed2" data-content="skills"><a href="#" class="nav-item">Skills</a>
+          <li class="tab icon-embed2" data-content="skills"><a href="/skills" class="nav-item">Skills</a>
           <section id="skills" class="tab-content">
             <header>
               Things I've Learned At Code Fellows:
@@ -111,8 +111,6 @@
       <footer>
         <section>
 
-          <h1 class="name">Alex Cahn</h1>
-
           <ul class="social-icons-list">
 
             <li>
@@ -137,13 +135,18 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.min.js"></script>
     <script src="/vendor/scripts/marked.js"></script>
     <script src="/vendor/scripts/highlight.pack.js"></script>
     <!-- <script src="JS/blogarticles.js"></script> -->
-    <script src="JS/app.js"></script>
-    <script src="JS/articleview.js"></script>
-    <script>
+    <script src="/JS/models/article.js"></script>
+    <script src="/JS/views/articleView.js"></script>
+    <script src="/JS/controllers/aboutContoller.js"></script>
+    <script src="/JS/controllers/articleController.js"></script>
+    <script src="/JS/controllers/skillsController.js"></script>
+    <script src="/JS/controllers/routes.js"></script>
+    <!-- <script>
       Article.fetchAll();
-    </script>
+    </script> -->
   </body>
 </html>
