@@ -35,10 +35,6 @@ textarea {
   color: darkslategrey;
 }
 
-.template {
-  visibility: hidden;
-}
-
 .main-nav ul {
   display: none;
   list-style: none;
@@ -72,10 +68,10 @@ textarea {
   text-decoration: none;
 }
 
-.tab-content li {
+/*.tab-content li {
   list-style: none;
   display: inline-block;
-}
+}*/
 
 form {
   color: #darkslategrey;
