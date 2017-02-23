@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.nav-item-list {
+  display: block;
+
+}
+
 #filters select {
   width: 90%;
   margin: .2em 5%;

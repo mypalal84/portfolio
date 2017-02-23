@@ -15,9 +15,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('./public'));
 
 // Write a new route that will handle a request and send the new.html file back to the user
-app.get('/', (request, response) => response.sendFile('index.html', {root: './public'}));
+app.get('/', (request, response) => response.sendFile('index.html', {root: '.'}));
 app.get('/new', (request, response) => response.sendFile('new.html', {root: './public'}));
-app.get('/about', (request, response) => response.sendFile('index.html', {root: './public'}));
 
 // Routes for making API calls to enact CRUD Operations on our database
 app.get('/articles', (request, response) => {

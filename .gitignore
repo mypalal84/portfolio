@@ -84,4 +84,8 @@ jspm_packages
 # dotenv environment variables file
 .env
 
+# auto-generated tag files
+tags
+githubToken.js
+
 # End of https://www.gitignore.io/api/macos,node
