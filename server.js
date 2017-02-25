@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const requestProxy = require('express-request-proxy');
 const PORT = process.env.PORT || 3000;
 const app = express();
-const conString = 'postgres://localhost:5432';
+const conString = process.env.DATABASE_URL || 'postgres://localhost:5432';
 const client = new pg.Client(conString);
 client.connect();
 // Include all of the static resources as an argument to app.use()
