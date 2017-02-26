@@ -4,16 +4,12 @@
 
 .tab {
   visibility: visible;
-  margin-top: 2em;
   padding-left: 4em;
   list-style: none;
-  font-size: 1.5em;
-}
-
-.icon-menu {
-  float: right;
+  float: left;
   display: inline-block;
   font-size: 4em;
+  padding: 2%;
 }
 
 .clearfix::after {
