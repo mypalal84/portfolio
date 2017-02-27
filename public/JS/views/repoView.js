@@ -7,8 +7,8 @@
   const ui = function() {
     let $about = $('#about'); // Best practice: Cache the DOM query if it's used more than once.
 
-    $about.find('.nav-item-list').empty();
-    $about.show().siblings().hide();
+    $about.find('.ul').empty();
+    // $about.show().siblings().hide();
   };
 
   // compile new handlebars
